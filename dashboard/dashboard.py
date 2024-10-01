@@ -4,7 +4,7 @@ import seaborn as sns
 import streamlit as st
 sns.set(style='whitegrid')
 
-data = pd.read_csv('day_cleaned.csv')
+data = pd.read_csv('./dashboard/day_cleaned.csv')
 
 st.title('🚲 Bike Sharing Dashboard')
 st.markdown("Selamat datang di **Bike Sharing Dashboard**! Di sini Anda bisa melihat analisis penyewaan sepeda berdasarkan berbagai faktor seperti hari kerja, hari libur, dan kondisi cuaca.")
