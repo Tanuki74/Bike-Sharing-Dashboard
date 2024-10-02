@@ -9,6 +9,12 @@ data = pd.read_csv('./dashboard/day_cleaned.csv')
 st.title('🚲 Bike Sharing Dashboard')
 st.markdown("Selamat datang di **Bike Sharing Dashboard**! Di sini Anda bisa melihat analisis penyewaan sepeda berdasarkan berbagai faktor seperti hari kerja, hari libur, dan kondisi cuaca.")
 
+st.markdown("""
+### Insight:
+- **Bussiness Question 1**: What are the patterns of bicycle use on weekdays compared to holidays?
+- **Bussiness Question 2**: How does weather conditions affect bicycle usage?
+""")
+
 st.sidebar.header("Filter Data")
 start_date = st.sidebar.date_input('Mulai dari', pd.to_datetime(data['dteday']).min())
 end_date = st.sidebar.date_input('Sampai dengan', pd.to_datetime(data['dteday']).max())
