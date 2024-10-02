@@ -48,8 +48,8 @@ with st.container():
     ax.set_title('Pengaruh Kondisi Cuaca terhadap Penggunaan Sepeda', fontsize=16)
     ax.set_xlabel('Kondisi Cuaca', fontsize=12)
     ax.set_ylabel('Total Penggunaan Sepeda', fontsize=12)
-    ax.set_xticks([0, 1, 2, 3])
-    ax.set_xticklabels(['Cerah', 'Berkabut + Berawan', 'Hujan/Snow Ringan', 'Hujan/Snow Lebat'])
+    ax.set_xticks([0, 1, 2])
+    ax.set_xticklabels(['Cerah', 'Berkabut + Berawan', 'Hujan/Snow Ringan'])
 
     st.pyplot(fig)
 
