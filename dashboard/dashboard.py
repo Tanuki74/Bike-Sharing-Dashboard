@@ -6,6 +6,8 @@ sns.set(style='whitegrid')
 
 data = pd.read_csv('./dashboard/day_cleaned.csv')
 
+st.set_page_config(page_title="Bike Sharing Dashboard", layout="wide")
+
 st.title('🚲 Bike Sharing Dashboard')
 st.markdown("Selamat datang di **Bike Sharing Dashboard**! Di sini Anda bisa melihat analisis penyewaan sepeda berdasarkan berbagai faktor seperti hari kerja, hari libur, dan kondisi cuaca.")
 
